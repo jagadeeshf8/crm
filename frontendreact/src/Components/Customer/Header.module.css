@@ -1,0 +1,87 @@
+/* Header container styling */
+.header {
+  display: flex;
+  align-items: center; /* Vertically align the logo and title */
+  justify-content: space-between; /* Space between the logo/title and buttons */
+  padding: 20px;
+  background: linear-gradient(#acace5, #c1b1e1); /* Background gradient */
+  color: rgb(16, 15, 15); /* Text color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo and title container */
+.logoHeader {
+  display: flex;
+  align-items: center; /* Vertically align the logo and title */
+}
+
+/* Favicon styling */
+.favicon {
+  width: 40px; /* Set the width of the favicon */
+  height: 40px; /* Set the height of the favicon */
+  margin-right: 15px; /* Add spacing between the favicon and the title */
+}
+
+/* Title styling */
+.logoHeader h1 {
+  font-size: 24px; /* Set the font size for the title */
+  font-weight: bold; /* Make the title bold */
+  margin: 0; /* Remove default margin */
+}
+
+/* Button container for alignment */
+.buttonContainer {
+  display: flex; /* Align buttons side by side */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Logout button styling */
+.logoutButton {
+  background-color: #e74c3c; /* Red background for the button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px;
+  font-weight: bold; /* Padding for better click area */
+  font-size: 18px; /* Font size for the text */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  display: flex; /* Flexbox for icon and text alignment */
+  align-items: center; /* Vertically center icon and text */
+  justify-content: center; /* Horizontally align icon and text */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.logoutButton:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.logoutButton svg {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 16px; /* Adjust icon size if needed */
+}
+
+/* Home button styling */
+.homeButton {
+  background-color: #f1f1f7; /* Green background for the button */
+  color: rgb(6, 5, 5); /* White text color */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px; 
+  font-weight: bold;/* Padding for better click area */
+  font-size: 18px; /* Font size matching Logout button */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  display: flex; /* Flexbox for icon and text alignment */
+  align-items: center; /* Vertically center icon and text */
+  justify-content: center; /* Horizontally align icon and text */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.homeButton:hover {
+  background-color: #020202;
+  color: white; /* Darker green on hover */
+}
+
+.homeButton svg {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 16px; /* Adjust icon size if needed */
+}

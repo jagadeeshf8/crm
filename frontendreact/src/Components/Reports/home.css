@@ -1,0 +1,55 @@
+/* Ensure the entire page has a white background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #b3a3e3, #bebde2); /* Gradient background */
+    color: aliceblue;/* White background for the entire page */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Center the content and add padding */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    padding: 20px;
+   
+}
+
+
+/* Heading animation */
+.home-container h2 {
+    font-size: 36px;
+    color:#333 ;
+    font-weight: bold;/* Gradient background for the navbar */;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+/* Paragraph animation */
+.home-container p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555 /* Gradient background for the navbar */;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s; /* Delay the paragraph animation */
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slightly move text up */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

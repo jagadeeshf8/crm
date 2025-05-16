@@ -1,0 +1,118 @@
+/* Container for the marketing campaign outcomes page */
+.marketing-outcomes-container {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  max-width: 1200px; /* Larger container */
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #e0f7fa, #f0f4c3);
+  position: relative;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  animation: fadeIn 0.8s ease-in-out; /* Apply fade-in animation on page load */
+}
+
+/* Title styling */
+.marketing-outcomes-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px; /* Larger title font */
+  color: #37474f;
+  animation: slideUp 0.8s ease-in-out; /* Slide-up animation */
+}
+
+/* Table styling */
+.marketing-outcomes-container table {
+  width: 100%; /* Full width */
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Table shadow for emphasis */
+  border-radius: 16px; /* Rounded table edges */
+  overflow: hidden; /* Ensure rounded edges apply */
+  margin-bottom: 30px; /* Margin below table */
+  font-size: 18px; /* Larger table content font */
+  animation: zoomIn 0.8s ease-in-out; /* Zoom-in effect for the table */
+}
+
+/* Table header and cell styling */
+.marketing-outcomes-container th,
+.marketing-outcomes-container td {
+  border: 1px solid #e0e0e0;
+  padding: 20px; /* Larger padding */
+  text-align: left;
+  font-size: 16px; /* Font size for readability */
+}
+
+.marketing-outcomes-container th {
+  background-color: #f0f0f0;
+  font-weight: 700; /* Bold headers */
+  color: #37474f;
+}
+
+/* Alternating row colors for better readability */
+.marketing-outcomes-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.marketing-outcomes-container tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Scrollbar styling */
+.marketing-outcomes-container {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #2a9d8f #f0f0f0; /* Thumb and track colors */
+}
+
+.marketing-outcomes-container::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+}
+
+.marketing-outcomes-container::-webkit-scrollbar-thumb {
+  background-color: #2a9d8f; /* Thumb color */
+  border-radius: 8px; /* Rounded thumb */
+}
+
+.marketing-outcomes-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Track color */
+}
+
+/* Animations */
+
+/* Fade-in effect for the container */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Fully transparent */
+    transform: translateY(20px); /* Slide from below */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Settle in position */
+  }
+}
+
+/* Slide-up effect for the title */
+@keyframes slideUp {
+  from {
+    opacity: 0; /* Transparent */
+    transform: translateY(30px); /* Slide from below */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Settle in position */
+  }
+}
+
+/* Zoom-in effect for the table */
+@keyframes zoomIn {
+  from {
+    opacity: 0; /* Transparent */
+    transform: scale(0.9); /* Slightly smaller */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal size */
+  }
+}

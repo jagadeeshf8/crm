@@ -1,0 +1,105 @@
+/* Container for the entire sales performance page */
+.sales-performance-container {
+  padding: 20px 20px 20px 200px;
+  font-family: 'Poppins', sans-serif;
+  color:black;
+}
+
+/* Title styling */
+.sales-performance-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background-color: white; /* Set table background to white */
+  border-radius: 12px; /* Add rounded edges to the table */
+  overflow: hidden; /* Ensure rounded edges apply to the entire table */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  /* Space between the table and the graphs */
+}
+
+.sales-table th,
+.sales-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.sales-table th {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.sales-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Add alternating row colors for better readability */
+}
+
+.sales-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Ensure odd rows have a white background */
+}
+
+/* Graphs container */
+.graphs-container {
+  display: flex;
+  justify-content: space-between; /* Space between the two graphs */
+  gap: 20px; /* Add spacing between graphs */
+  margin-top: 20px; /* Space above the graphs */
+}
+
+/* Individual graph styling */
+.graph-container {
+  flex: 1; /* Make both graphs take equal width */
+  background-color: #ffffff; /* White background for the graph container */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 12px; /* Rounded edges */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px; /* Fixed height for the graph container */
+}
+
+.graph-container h3 {
+  margin-bottom: 20px; /* Space between the title and the graph */
+  font-size: 18px;
+  text-align: center;
+}
+
+.graph-container canvas {
+  width: 100%; /* Ensure the graph fits the container */
+  height: 300px; /* Set a fixed height for the graph */
+}
+.graph-labels {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the labels */
+  margin-top: 10px; /* Space above the labels */
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: white;
+}
+
+.label.last-year1 {
+  background-color: #3498db; /* Matches the first bar color in the graph */
+}
+.label.last-year {
+  background-color: #9b59b6; /* Matches the first bar color in the graph */
+}
+.label.last-month {
+  background-color: #2ecc71; /* Matches the second bar color in the graph */
+}
+.label.last-week {
+  background-color: #e74c3c; /* Matches the second bar color in the graph */
+}

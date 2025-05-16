@@ -1,0 +1,78 @@
+/* Navbar container */
+.navbar {
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar header (favicon and title) */
+.navbar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar-favicon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navbar list */
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.navbar-list li {
+  margin-bottom: 15px;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Align text and icon */
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-list li a:hover {
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background-color: black;
+  color: white;
+}
+
+.navbar-icon {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.navbar-icon2 {
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.navbar-icon3 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+/* Logout item at the bottom */
+.navbar-list li:last-child {
+  margin-top: auto;
+}

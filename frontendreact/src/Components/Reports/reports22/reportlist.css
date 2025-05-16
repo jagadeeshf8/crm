@@ -1,0 +1,177 @@
+/* Container for the report list */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* padding: 20px 20px 20px 100px; */
+  }
+
+.report-list-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #b3a3e3, #bebde2);
+    /* background: linear-gradient(135deg, #e0f7fa, #f0f4c3); */
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #37474f;
+    transition: box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .report-list-container:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header container for the title and add button */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-container h2 {
+    font-size: 24px;
+    color: #37474f;
+  }
+  
+  .add-button {
+    padding: 10px 20px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #238a80;
+    transform: translateY(-2px);
+  }
+  
+  /* Filter container for dropdown and buttons */
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-container select,
+  .filter-container button {
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    color: #495057;
+    transition: border-color 0.3s ease;
+  }
+  
+  .filter-container select:focus,
+  .filter-container button:focus {
+    border-color: #2a9d8f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 157, 143, 0.5);
+  }
+  
+  .filter-button,
+  .refresh-button {
+    background-color: #2a9d8f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .filter-button:hover,
+  .refresh-button:hover {
+    background-color: #238a80;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Table styling */
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .report-table th,
+  .report-table td {
+    border: 1px solid #e0e0e0;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .report-table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    color: #37474f;
+  }
+  
+  /* Action buttons */
+  /* Common styles for both buttons */
+.edit-button,
+.delete-button {
+  padding: 10px 20px; /* Increased padding for uniform size */
+  margin: 5px 10px; /* Increased horizontal margin for gap between buttons */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Slightly larger font size for visibility */
+  cursor: pointer;
+  width: 90px; /* Fixed width for both buttons */
+  height: 40px; /* Fixed height for both buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex; /* Flex display for consistent alignment */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+}
+
+/* Edit button styles */
+.edit-button {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #238a80;
+  transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* Delete button styles */
+.delete-button {
+  background-color: #e63946;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d62828;
+  transform: translateY(-2px); /* Subtle hover effect */
+}
+
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

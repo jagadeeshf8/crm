@@ -1,0 +1,127 @@
+/* Form container */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ 
+.form-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+ 
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+ 
+.form-group label {
+  font-weight: bold;
+  color: #37474f;
+  font-size: 20px;
+}
+ 
+.form-group input,
+.form-group textarea {
+  width: 100;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #495057;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2a9d8f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(42, 157, 143, 0.5);
+}
+ 
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+ 
+.add-btn,
+.back-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex: 1;
+  text-align: center;
+}
+ 
+.add-btn {
+  background-color: #2a9d8f;
+  color: white;
+}
+ 
+.add-btn:hover {
+  background-color: #238a80;
+  transform: translateY(-2px);
+}
+ 
+.back-btn {
+  background-color: #e0e0e0;
+  color: #495057;
+}
+ 
+.back-btn:hover {
+  background-color: #d6d6d6;
+  transform: translateY(-2px);
+}
+ 
+/* Success toast */
+.toast-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+ 
+.check-icon {
+  font-weight: bold;
+  margin-left: 10px;
+}
+ 
+/* Error message styling */
+.error {
+  color: #e63946;
+  font-size: 13px;
+  margin-top: 5px;
+}
+ 
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

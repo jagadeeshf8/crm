@@ -1,0 +1,127 @@
+ 
+.support-ticket-list-container {
+    max-width: 1200px; /* Adjust as needed for more columns */
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #e9ecef, #f8f9fa); /* Light gray gradient */
+    position: relative;
+    overflow-y: auto;
+    overflow-x: auto; /* Enable horizontal scrolling for wider tables */
+    color: #495057; /* Darker text color */
+    transition: box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out; /* Entrance animation */
+  }
+ 
+  .support-ticket-list-container:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .add-ticket-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    font-size: 16px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .add-ticket-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+ 
+  .support-ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white; /* White table background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
+    animation: fadeInUp 0.5s ease-out;
+  }
+ 
+  .support-ticket-table th,
+  .support-ticket-table td {
+    border: 1px solid #e0e0e0; /* Light table border */
+    padding: 12px; /* Slightly reduced padding for more content */
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+ 
+  .support-ticket-table th {
+    background-color: #f8f9fa; /* Light header background */
+    font-weight: 600;
+    color: #495057;
+  }
+ 
+  .edit-button,
+  .delete-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .edit-button {
+    background-color: #28a745; /* Bootstrap success color */
+    color: white;
+  }
+ 
+  .delete-button {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+  }
+ 
+  .edit-button:hover,
+  .delete-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+ 
+  .form-header {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #007bff; /* Bootstrap primary color */
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+ 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

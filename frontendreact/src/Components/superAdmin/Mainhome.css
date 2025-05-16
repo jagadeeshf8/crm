@@ -1,0 +1,78 @@
+/* Main container styling */
+.button-container {
+    display: flex; /* Align buttons horizontally */
+    justify-content: center; /* Center the buttons */
+    align-items: center; /* Center the buttons vertically */
+    gap: 40px; /* Increase space between buttons */
+    margin-top: 40px; /* Add more space above the buttons */
+  }
+  
+  /* Button styling */
+  .navigate-button {
+    width: 200px; /* Larger width for square shape */
+    height: 200px; /* Larger height for square shape */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 20px; /* Larger font size for better readability */
+    font-weight: bold; /* Make text bold */
+    color: white; /* White text color */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation effects */
+  }
+  
+  /* Different button colors */
+  .navigate-button.customer {
+    background-color: #007bff; /* Blue */
+  }
+  .navigate-button.customer:hover {
+    background-color: #0056b3; /* Darker blue */
+  }
+  
+  .navigate-button.reports {
+    background-color: #28a745; /* Green */
+  }
+  .navigate-button.reports:hover {
+    background-color: #218838; /* Darker green */
+  }
+  
+  .navigate-button.ticket {
+    background-color: #ffc107; /* Yellow */
+    color: rgb(248, 245, 245); /* Text color for contrast */
+  }
+  .navigate-button.ticket:hover {
+    background-color: #e0a800; /* Darker yellow */
+  }
+  
+  .navigate-button.opportunity {
+    background-color: #17a2b8; /* Cyan */
+  }
+  .navigate-button.opportunity:hover {
+    background-color: #117a8b; /* Darker cyan */
+  }
+  
+  .navigate-button.campaign {
+    background-color: #ff5722; /* Orange */
+  }
+  .navigate-button.campaign:hover {
+    background-color: #e64a19; /* Darker orange */
+  }
+  
+  /* Add fade-in animation effect for page load */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start fully transparent */
+      transform: translateY(-50px); /* Slide in from above */
+    }
+    to {
+      opacity: 1; /* End fully visible */
+      transform: translateY(0); /* Settle in place */
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.8s ease-in-out; /* Apply fade-in animation */
+  }
+  

@@ -1,0 +1,118 @@
+/* Container for the customer behavior page */
+.customer-behavior-container {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  max-width: 1200px; /* Match the max-width of the marketing table */
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #e0f7fa, #f0f4c3);
+  position: relative;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  animation: fadeIn 0.8s ease-in-out; /* Add fade-in animation */
+}
+
+/* Title styling */
+.customer-behavior-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px; /* Match the font size of the marketing table title */
+  color: #37474f;
+  animation: slideDown 0.8s ease-in-out; /* Add slide-down animation */
+}
+
+/* Table styling */
+.customer-behavior-container table {
+  width: 100%; /* Keep the table width at 100% of the container */
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Match the shadow of the marketing table */
+  border-radius: 16px; /* Match the border radius of the marketing table */
+  overflow: hidden; /* Ensure rounded edges apply to the entire table */
+  margin-bottom: 30px; /* Match the margin below the marketing table */
+  font-size: 18px; /* Match the font size of the marketing table */
+  animation: zoomIn 0.8s ease-in-out; /* Add zoom-in animation */
+}
+
+/* Table header and cell styling */
+.customer-behavior-container th,
+.customer-behavior-container td {
+  border: 1px solid #e0e0e0;
+  padding: 20px; /* Match the padding of the marketing table */
+  text-align: left;
+  font-size: 16px; /* Match the font size of the marketing table content */
+}
+
+.customer-behavior-container th {
+  background-color: #f0f0f0;
+  font-weight: 700; /* Match the font weight of the marketing table headers */
+  color: #37474f;
+}
+
+/* Alternating row colors for better readability */
+.customer-behavior-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.customer-behavior-container tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Scrollbar styling */
+.customer-behavior-container {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #2a9d8f #f0f0f0; /* Thumb and track colors */
+}
+
+.customer-behavior-container::-webkit-scrollbar {
+  width: 10px; /* Match the scrollbar width of the marketing table */
+}
+
+.customer-behavior-container::-webkit-scrollbar-thumb {
+  background-color: #2a9d8f; /* Scrollbar thumb color */
+  border-radius: 8px; /* Rounded scrollbar thumb */
+}
+
+.customer-behavior-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Scrollbar track color */
+}
+
+/* Animations */
+
+/* Fade-in effect for the container */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(20px); /* Slide in from below */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Settle in place */
+  }
+}
+
+/* Slide-down effect for the title */
+@keyframes slideDown {
+  from {
+    opacity: 0; /* Transparent */
+    transform: translateY(-20px); /* Slide from above */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Settle in place */
+  }
+}
+
+/* Zoom-in effect for the table */
+@keyframes zoomIn {
+  from {
+    opacity: 0; /* Transparent */
+    transform: scale(0.9); /* Slightly smaller */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal size */
+  }
+}

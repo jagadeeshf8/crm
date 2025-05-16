@@ -1,0 +1,82 @@
+/* Ensure the entire page has the gradient background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+ /* background: linear-gradient(#717086, #0c0855); */
+  font-family: 'Poppins', sans-serif;
+   /* Prevent unnecessary scrollbars */
+}
+.app-container {
+  min-height: 100vh; /* Full viewport height */
+  height: 100vh; /* Ensure it fully occupies the viewport */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #b3a3e3, #bebde2);
+  /* background: linear-gradient(135deg, #e0f7fa, #f0f4c3);  */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden;
+  box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+}
+
+/* Reset styles for child components inside /home2 */
+.app-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure consistent box model */
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure it occupies the full height */
+  width: 100%; /* Ensure it occupies the full width */
+  overflow: hidden; /* Ensure full viewport height */
+}
+
+.navbar {
+  width: 200px; /* Set a fixed width for the sidebar */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* Fixed positioning */
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(#717086, #0c0855); /* Gradient background for the navbar */
+  color: white; /* Ensure text is visible on the gradient */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ensure it's above other content if needed */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1; /* Allow the list to grow and push logout down */
+}
+
+.navbar li {
+  margin-bottom: 10px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white; /* Ensure links are visible on the gradient */
+  display: block;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.navbar li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
+}
+
+.navbar li.logout {
+  margin-top: auto; /* Push logout to the bottom */
+}
+
+
+
